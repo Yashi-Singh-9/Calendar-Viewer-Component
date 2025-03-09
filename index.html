@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <title>Calendar Viewer Component</title>
+</head>
+<body>
+    <main>
+        <section class="calendar">
+            <div class="calendar-header">
+                <h2 id="month-year">p</h2>
+
+                <div class="btn">
+                    <i class="fa-solid fa-chevron-left" onclick="prevMonth()"></i>
+                    <i class="fa-solid fa-chevron-right" onclick="nextMonth()"></i>
+                </div>
+            </div>
+
+            <div class="weekdays">
+                <span>Mon</span> <span>Tue</span> <span>Wed</span> <span>Thu</span> <span>Fri</span> <span>Sat</span> <span>Sun</span>
+            </div>
+
+            <div class="days" id="calendar-days"></div>
+        </section>
+    </main>
+
+    <footer>
+        Challenge by <a href="https://www.frontendpro.dev/frontend-coding-challenges" target="_blank">FrontendPro</a>.
+        Coded by <a href="https://www.linkedin.com/in/yashi-singh-b4143a246" target="_blank">Yashi Singh</a>.
+    </footer>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>

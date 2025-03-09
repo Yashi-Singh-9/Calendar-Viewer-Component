@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url("../images/background-image.png");
+  background-size: cover;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #171D35;
+}
+main {
+  margin: 0 auto;
+}
+main .calendar {
+  margin: 12rem auto 2rem auto;
+  background: linear-gradient(to bottom right, #FDFDFF, #F6F7FF);
+  max-width: 669px;
+  width: 100%;
+  padding: 4rem;
+  border-radius: 20px;
+}
+@media (max-width: 680px) {
+  main .calendar {
+    width: 96%;
+    margin: 6rem auto 2rem auto;
+    padding: 2rem;
+  }
+}
+main .calendar .calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  flex-wrap: wrap;
+  gap: 3.5rem;
+}
+main .calendar .calendar-header h2 {
+  font-size: 2.25rem;
+}
+main .calendar .calendar-header .btn {
+  display: flex;
+  gap: 2rem;
+}
+main .calendar .calendar-header .btn .fa-solid {
+  font-size: 2rem;
+  cursor: pointer;
+}
+main .calendar .weekdays {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 700;
+  gap: 3.1rem;
+  margin: 3rem auto;
+}
+main .calendar .days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 15px;
+}
+main .calendar .day {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+main .calendar .day:hover,
+main .calendar .day.current-day {
+  background: #6a5acd;
+  color: white;
+}
+footer {
+  text-align: center;
+}
+footer a,
+footer a:visited {
+  text-decoration: none;
+  font-style: italic;
+  font-weight: 700;
+}
